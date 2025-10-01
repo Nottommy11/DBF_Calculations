@@ -214,6 +214,7 @@
 </script>
 
 <div class="main_scores">
+	<h5>Please Work</h5>
 	<h1>Total Score: {calcTotalScore()}</h1>
 	<h2>Total Report Score: {calcTotalReportScore()}</h2>
 	<h2>Missions Score: {calcMissionScore()}</h2>
