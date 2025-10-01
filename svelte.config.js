@@ -10,7 +10,6 @@ const config = {
 			fallback: '404.html',
 			pages: 'build',
 			assets: 'build',
-			fallback: undefined,
 			precompress: false,
 			strict: true
 		}),
@@ -19,5 +18,7 @@ const config = {
 		}
 	}
 };
+
+console.log(process.argv.includes('dev') ? '' : process.env.BASE_PATH);
 
 export default config;
