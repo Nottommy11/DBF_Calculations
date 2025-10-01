@@ -25,4 +25,4 @@ vite.config.ts.timestamp-*
 # Temp Assets
 /src/lib/assets/*
 !/src/lib/assets/.gitkeep
-
+!/src/lib/assets/AeroLogo.svg
