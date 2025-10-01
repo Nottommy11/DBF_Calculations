@@ -7,14 +7,12 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
+		"deploy": "npm run build && gh-pages -d build",
 		"prepare": "svelte-kit sync || echo ''",
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build",
-		"gh-pages": "npm run build && npx gh-pages -d build"
+		"predeploy": "npm run build"
 	},
 	"devDependencies": {
 		"@bulatdashiev/svelte-slider": "^1.0.3",
-		"@sveltejs/adapter-auto": "^6.0.0",
 		"@sveltejs/adapter-static": "^3.0.9",
 		"@sveltejs/kit": "^2.22.0",
 		"@sveltejs/vite-plugin-svelte": "^6.0.0",
