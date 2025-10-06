@@ -5,11 +5,9 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build",
+		"dev:lan": "vite dev --host",
 		"preview": "vite preview",
-		"deploy": "npm run build && gh-pages -d build",
-		"prepare": "svelte-kit sync || echo ''",
-		"predeploy": "npm run build"
+		"deploy": "npm run build && gh-pages -d build"
 	},
 	"devDependencies": {
 		"@bulatdashiev/svelte-slider": "^1.0.3",
@@ -21,7 +19,6 @@
 		"vite": "^7.0.4"
 	},
 	"dependencies": {
-		"@threlte/core": "^8.1.5",
 		"three": "^0.180.0"
 	}
 }
